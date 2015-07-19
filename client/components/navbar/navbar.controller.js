@@ -9,6 +9,10 @@ angular.module('angularToolsApp')
     {
       'title': 'todo',
       'link': '/todo'
+    },
+    {
+      'title': 'todogrid',
+      'link': '/todogrid'
     }];
 
     $scope.isCollapsed = true;

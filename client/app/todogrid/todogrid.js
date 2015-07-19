@@ -3,8 +3,8 @@
 angular.module('angularToolsApp')
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'app/main/main.html',
-        controller: 'MainCtrl'
+      .when('/todogrid', {
+        templateUrl: 'app/todogrid/todogrid.html',
+        controller: 'TodogridCtrl'
       });
   });

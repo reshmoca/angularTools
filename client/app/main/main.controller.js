@@ -1,11 +1,7 @@
 'use strict';
 
 angular.module('angularToolsApp')
-  .controller('MainCtrl', function ($scope, $http) {
-    $scope.awesomeThings = [];
-
-    $http.get('/api/things').success(function(awesomeThings) {
-      $scope.awesomeThings = awesomeThings;
-    });
-
-  });
+.controller('MainCtrl',['$scope', 'appService','todoGridService', function ($scope, appService, todoGridService) {
+	$scope.appServiceShow = appService.getTest();
+	$scope.todoGridServiceShow = todoGridService.getTodoTest();
+}]);
